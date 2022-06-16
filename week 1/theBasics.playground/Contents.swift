@@ -58,11 +58,7 @@ print(length ?? 0)
 
 // guard and using a fuction with parameter us string which is an optional the return type is Void
 
-func printKey(_ userKey: String?) {
-    guard let key = userKey else { return }
-    print(key + " with guard")
 
-}
 
 printKey(userPassword)
 
