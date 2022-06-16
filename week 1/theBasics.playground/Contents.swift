@@ -68,8 +68,9 @@ printKey(userPassword)
 
 //function with a return type tuple
 
+
 func getlastAndposition(_ password: String?) -> (String, Int) {
-    guard let valueUnwraped = password else { return ("there is no Value", 0) }
+    guard let valueUnwraped = password else { return ("you need a value", 0) }
     return (String(valueUnwraped.last!), valueUnwraped.count)
 }
 
