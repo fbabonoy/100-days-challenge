@@ -6,3 +6,6 @@ let name = "fernando"
 //create variable
 var car = "acura"
 car = "honda"
+
+print(car)
+
