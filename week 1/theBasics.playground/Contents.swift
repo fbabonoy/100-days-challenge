@@ -7,6 +7,7 @@ let name = "fernando"
 var car = "acura"
 car = "honda"
 
+
 print(car)
 
 // string interpolation
@@ -74,3 +75,15 @@ func getlastAndposition(_ password: String?) -> (String, Int) {
 }
 
 print(getlastAndposition(userPassword))
+
+// iterate though array and if the value id greter than 3 multiply by 2 then print new array
+var numbers = [1,4,3,8]
+
+var newArray = numbers.map { number -> Int in
+    if number > 3 {
+        return number * 2
+    }
+    return number
+}
+
+print(newArray)
