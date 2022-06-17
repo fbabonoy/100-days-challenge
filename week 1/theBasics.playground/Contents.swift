@@ -59,18 +59,15 @@ print(length ?? 0)
 
 // guard and using a fuction with parameter us string which is an optional the return type is Void
 
-func printKey(_ userKey: String?) {
-    guard let key = userKey else { return }
-    print(key + " with guard")
 
-}
 
 printKey(userPassword)
 
 //function with a return type tuple
 
+
 func getlastAndposition(_ password: String?) -> (String, Int) {
-    guard let valueUnwraped = password else { return ("there is no Value", 0) }
+    guard let valueUnwraped = password else { return ("you need a value", 0) }
     return (String(valueUnwraped.last!), valueUnwraped.count)
 }
 
