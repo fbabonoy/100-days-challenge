@@ -144,4 +144,40 @@ var newArray = numbers.map { number -> Int in
 
 print(newArray)
 
+//loops
+/*
+ this is a normal for loop
+ 
+for i in numbers {
+    print(i)
+}
+ 
+*/
+
+// this will only print the bimber in the loop that are greater that 2
+print("this is a for loop")
+
+for i in numbers where i > 2 {
+    print(i)
+}
+
+// this a loop that will continuew  while a condition is true
+print("this is a while loop")
+
+var count = 0
+while count < numbers.count {
+    print(count)
+    count += 1
+}
+
+// repeat is the same as the while but repeate will run at leat one time while might run no times
+print("this is a repeat loop")
+
+count = 0
+repeat {
+    print(count)
+    count += 1
+} while count < numbers.count
+
+print("---------------------")
 
