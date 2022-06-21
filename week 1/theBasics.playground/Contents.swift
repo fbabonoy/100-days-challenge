@@ -7,6 +7,7 @@ let name = "fernando"
 var car = "acura"
 car = "honda"
 
+
 print(car)
 
 //
@@ -105,6 +106,7 @@ func getlastAndposition(_ password: String?) -> (String, Int) {
 }
 
 print(getlastAndposition(userPassword))
+
 
 //conditionals
 
