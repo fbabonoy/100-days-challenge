@@ -181,3 +181,15 @@ repeat {
 
 print("---------------------")
 
+// pass by referance
+func swapTwoInts(a: inout Int, b: inout Int) {
+    let tempA = a
+    a = b
+    b = tempA
+}
+
+var a = 20
+var b = 10
+swapTwoInts(a: &a, b: &b)
+
+print(a)
