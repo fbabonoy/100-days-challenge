@@ -9,14 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var setColor = false
+    @State private var useLargeFont = true
     var body: some View {
-        Button {
-            setColor = !setColor
-        } label: {
-            Text("this is a button")
-                .padding()
-                .background(setColor ? .blue : .red)
-                .foregroundColor(.white)
+        VStack {
+            Button {
+                setColor = !setColor
+            } label: {
+                Text("this is a button")
+                    .padding()
+                    .background(setColor ? .blue : .red)
+                    .foregroundColor(.white)
+                    .font(useLargeFont ? .largeTitle : .subheadline)
+            }
+            Toggle("change font to large", isOn: $useLargeFont)
         }
         
 
