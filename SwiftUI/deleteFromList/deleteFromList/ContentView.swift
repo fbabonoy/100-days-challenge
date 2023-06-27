@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(expenses.item, id: \.name) { cell in
+                ForEach(expenses.item) { cell in
                     Button {
                         
                     } label: {
