@@ -57,10 +57,10 @@
 			children = (
 				244776622A4B4D0100CF24C0 /* deleteFromListApp.swift */,
 				244776642A4B4D0100CF24C0 /* ContentView.swift */,
+				244776722A4B4D5500CF24C0 /* Expenses.swift */,
 				244776702A4B4D4400CF24C0 /* ExpenceItem.swift */,
 				244776662A4B4D0200CF24C0 /* Assets.xcassets */,
 				244776682A4B4D0200CF24C0 /* Preview Content */,
-				244776722A4B4D5500CF24C0 /* Expenses.swift */,
 			);
 			path = deleteFromList;
 			sourceTree = "<group>";

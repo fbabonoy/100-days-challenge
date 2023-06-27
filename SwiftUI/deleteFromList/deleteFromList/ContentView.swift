@@ -8,14 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var expenses = Expenses()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                ForEach(expenses.item, id: \.name) { cell in
+                    Button {
+                        
+                    } label: {
+                        Text(cell.name)
+                    }
+
+                }
+                .onDelete(perform: removeCell)
+            }
+            .navigationTitle("iExpense")
+            .toolbar {
+                Button {
+                    let expense = ExpenceItem(name: "name", type: "car payment", ammount: 300)
+                    expenses.item.append(expense)
+                } label: {
+                    Image(systemName: "plus")
+                }
+
+            }
+
         }
-        .padding()
+    }
+    
+    func removeCell(_ IndexSet: IndexSet) {
+        expenses.item.remove(atOffsets: IndexSet)
     }
 }
 

@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct ExpenceItem {
+    let name: String
+    let type: String
+    let ammount: Double
+}
