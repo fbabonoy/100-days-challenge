@@ -15,10 +15,16 @@ struct ContentView: View {
         today...tomorrow
     }
     
+    var current: DateComponents { Calendar.current.dateComponents([.hour,.minute], from: today)
+    }
+    
     var body: some View {
-        DatePicker("please pick a date", selection: $today, in: today...)
-            .labelsHidden()
+        VStack {
+            DatePicker("please pick a date", selection: $today, in: today...)
+                .labelsHidden()
             .padding()
+            
+        }
     }
 }
 
