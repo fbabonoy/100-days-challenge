@@ -13,6 +13,7 @@
 		2447766A2A4B4D0200CF24C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244776692A4B4D0200CF24C0 /* Preview Assets.xcassets */; };
 		244776712A4B4D4400CF24C0 /* ExpenceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244776702A4B4D4400CF24C0 /* ExpenceItem.swift */; };
 		244776732A4B4D5500CF24C0 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244776722A4B4D5500CF24C0 /* Expenses.swift */; };
+		244776772A4B73D400CF24C0 /* ExpenseItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244776762A4B73D400CF24C0 /* ExpenseItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		244776692A4B4D0200CF24C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		244776702A4B4D4400CF24C0 /* ExpenceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenceItem.swift; sourceTree = "<group>"; };
 		244776722A4B4D5500CF24C0 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
+		244776762A4B73D400CF24C0 /* ExpenseItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				244776622A4B4D0100CF24C0 /* deleteFromListApp.swift */,
 				244776642A4B4D0100CF24C0 /* ContentView.swift */,
+				244776762A4B73D400CF24C0 /* ExpenseItemView.swift */,
 				244776722A4B4D5500CF24C0 /* Expenses.swift */,
 				244776702A4B4D4400CF24C0 /* ExpenceItem.swift */,
 				244776662A4B4D0200CF24C0 /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 				244776732A4B4D5500CF24C0 /* Expenses.swift in Sources */,
 				244776652A4B4D0100CF24C0 /* ContentView.swift in Sources */,
 				244776632A4B4D0100CF24C0 /* deleteFromListApp.swift in Sources */,
+				244776772A4B73D400CF24C0 /* ExpenseItemView.swift in Sources */,
 				244776712A4B4D4400CF24C0 /* ExpenceItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

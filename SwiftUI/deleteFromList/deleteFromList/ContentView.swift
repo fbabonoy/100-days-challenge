@@ -9,32 +9,41 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var expenses = Expenses()
+    @State private var itemView = false
     
     var body: some View {
         NavigationView {
             List {
                 ForEach(expenses.item) { cell in
-                    Button {
+                    HStack {
+                        VStack {
+                            Text(cell.name)
+                                .font(.headline)
+                            Text(cell.type)
+                        }
                         
-                    } label: {
-                        Text(cell.name)
+                        Spacer()
+                        
+                        Text(cell.ammount, format: .currency(code: "USD"))
                     }
-
                 }
                 .onDelete(perform: removeCell)
             }
             .navigationTitle("iExpense")
             .toolbar {
                 Button {
-                    let expense = ExpenceItem(name: "name", type: "car payment", ammount: 300)
-                    expenses.item.append(expense)
+                    itemView = true
                 } label: {
                     Image(systemName: "plus")
                 }
 
             }
+            .sheet(isPresented: $itemView) {
+                ExpenseItemView(item: expenses)
+            }
 
         }
+        
     }
     
     func removeCell(_ IndexSet: IndexSet) {
