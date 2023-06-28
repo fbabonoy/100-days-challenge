@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ExpenseItemView: View {
-    let item: Expenses
+    @ObservedObject var item: Expenses
     @State private var name: String = ""
     @State private var account: String = "personal"
     @State private var amount: Double = 0.0
