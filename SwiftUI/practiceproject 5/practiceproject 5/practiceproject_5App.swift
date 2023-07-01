@@ -11,7 +11,7 @@ import SwiftUI
 struct practiceproject_5App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ListOfWords()
         }
     }
 }
